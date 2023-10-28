@@ -1,0 +1,10 @@
+channles:
+  - conda-forge
+  - schrodinger
+dependencies:
+  - numpy
+  - pymol-bundle
+  - swig
+  - boost-cpp
+  - sphinx
+  - sphinx_rtd_theme
