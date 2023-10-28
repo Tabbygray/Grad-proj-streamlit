@@ -1,0 +1,37 @@
+REMARK VINA RESULT:      -5.8      6.127      9.188
+REMARK  Name = C:\Users\jundo\Desktop\Git\Graduation_project\vina\vildagliptin_from_3w2t.pdb
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   LIG    1       51.114  63.126  32.374  0.00  0.00    +0.004 C 
+ATOM      2  C   LIG    1       51.561  62.904  33.817  0.00  0.00    +0.016 C 
+ATOM      3  C   LIG    1       50.899  63.933  34.765  0.00  0.00    +0.062 C 
+ATOM     15  C   LIG    1       49.375  63.836  34.671  0.00  0.00    +0.016 C 
+ATOM     16  C   LIG    1       48.932  64.067  33.216  0.00  0.00    +0.004 C 
+ATOM     17  C   LIG    1       49.358  65.496  32.785  0.00  0.00    +0.031 C 
+ATOM     18  C   LIG    1       50.871  65.594  32.872  0.00  0.00    +0.128 C 
+ATOM     19  O   LIG    1       51.303  66.905  32.476  0.00  0.00    -0.226 OA
+ATOM     20  C   LIG    1       51.322  65.333  34.323  0.00  0.00    +0.046 C 
+ATOM     21  C   LIG    1       51.504  64.543  31.933  0.00  0.00    +0.031 C 
+ATOM     22  C   LIG    1       49.586  62.999  32.325  0.00  0.00    +0.000 C 
+ENDROOT
+BRANCH   3   4
+ATOM      4  N   LIG    1       51.314  63.715  36.148  0.00  0.00    -0.211 NA
+BRANCH   4   5
+ATOM      5  C   LIG    1       51.151  62.424  36.802  0.00  0.00    +0.174 C 
+BRANCH   5   6
+ATOM      6  C   LIG    1       50.375  62.489  38.102  0.00  0.00    +0.244 C 
+ATOM      7  O   LIG    1       50.824  63.127  39.038  0.00  0.00    -0.273 OA
+ATOM      8  N   LIG    1       49.209  61.754  38.277  0.00  0.00    -0.275 N 
+ATOM      9  C   LIG    1       48.485  61.308  37.067  0.00  0.00    +0.094 C 
+ATOM     10  C   LIG    1       47.023  61.172  37.479  0.00  0.00    +0.024 C 
+ATOM     11  C   LIG    1       46.856  62.157  38.630  0.00  0.00    +0.028 C 
+ATOM     12  C   LIG    1       48.231  62.253  39.275  0.00  0.00    +0.119 C 
+BRANCH  12  13
+ATOM     13  C   LIG    1       48.236  61.277  40.419  0.00  0.00    +0.115 C 
+ATOM     14  N   LIG    1       47.133  60.891  40.898  0.00  0.00    -0.150 NA
+ENDBRANCH  12  13
+ENDBRANCH   5   6
+ENDBRANCH   4   5
+ENDBRANCH   3   4
+TORSDOF 4
