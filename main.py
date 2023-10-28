@@ -39,6 +39,9 @@ def split_vina_output(filename):
 # 화면 좌우 분할
 left_column, right_column = st.columns((2,1))
 
+# 결과 출력 창
+results_window = right_column.empty()
+
 # 파일 업로드 위젯 생성
 receptor_file = left_column.file_uploader("리셉터 파일을 업로드하세요", type=['pdbqt'])
 ligand_file = left_column.file_uploader("리간드 파일을 업로드하세요", type=['pdbqt'])
@@ -53,9 +56,6 @@ z = cord_input_cols[2].number_input('z 좌표를 입력하세요', value=37.20)
 # 최적 ex값 
 if 'min_exhaustiveness' not in st.session_state:
     st.session_state['min_exhaustiveness'] = "-"
-
-# 결과 출력 창
-results_window = right_column.empty()
 
 total_pre_docking_time = 0
 min_rmsd_time_product = None
@@ -85,6 +85,7 @@ if receptor_file is not None and ligand_file is not None:
 
     if button_cols[2].button('Exhaustiveness 값 찾기', disabled=False):
         min_rmsd_sum = None
+
         # 프로그레스 바 
         progress_bar = right_column.progress(0)
 
@@ -135,7 +136,7 @@ if receptor_file is not None and ligand_file is not None:
                     cmd.delete(pose_name)
 
             progress_bar.progress(exhaustiveness/9)
-            right_column.write(f"{exhaustiveness} / 8")
+            results_window.write(f"{exhaustiveness} / 8")
                     # 각 RMSD 값을 출력합니다.
                     # left_column.write(f'RMSD for exhaustiveness {exhaustiveness}, pose {i}: {rmsd}')
 
